@@ -3,10 +3,10 @@
 declare namespace Ultrasonic {
 	
 	  /**
-	   * initialises local variable
-	   */
-	  //% blockId=ultrasonic_init
-	  //% block="Ultrasonic TrigPin %trigPin|with EchoPin %echoPin" shim=Ultrasonic::init
+     * initialises local variablesssss
+     */
+    //% blockId=ultrasonic_init
+    //% block="Ultrasonic send|value %trigPin|= %echoPin" shim=Ultrasonic::init
     function init(trigPin: Pins, echoPin: Pins): void;
     
 		/**
