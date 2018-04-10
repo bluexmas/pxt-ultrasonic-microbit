@@ -32,10 +32,10 @@ namespace Ultrasonic {
 	HCSR04 *hcsr04;
 	
   /**
-   * initialises local variables
+   * initialises local variable
    */
   //% blockId=ultrasonic_init
-  //% block="Ultrasonic send|value %trigPin|= %echoPin" shim=Ultrasonic::init
+  //% block="the %trigPin|th item in %echoPin|" 
   void init(Pins trigPin, Pins echoPin){
     hcsr04 = new HCSR04((PinName)trigPin, (PinName)echoPin);
   }
