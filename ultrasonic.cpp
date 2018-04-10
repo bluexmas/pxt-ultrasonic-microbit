@@ -35,7 +35,7 @@ namespace Ultrasonic {
   * initialises local variablesssss
   */
   //% blockId=ultrasonic_init
-  //% block="radio send|value %trigPin|= %echoPin"
+  //% block="Ultrasonic(TrigPin : %trigPin,EchoPin : %echoPin)" shim=Ultrasonic::init
   void init(Pins trigPin, Pins echoPin) {
     hcsr04 = new HCSR04((PinName)trigPin, (PinName)echoPin);
   }
