@@ -27,7 +27,7 @@ enum class Pins{
 
 //% color=50 weight=80
 //% icon="\uf1eb"
-namespace Ultrasonic { 
+namespace ultrasonic { 
 	
 	HCSR04 *hcsr04;
 	
