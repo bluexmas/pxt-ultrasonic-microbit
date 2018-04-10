@@ -3,6 +3,8 @@
 
 using namespace pxt;
 
+HCSR04 *hcsr04;
+
 enum class Pins{
   P0=  3,
   P1=  2,
@@ -28,8 +30,6 @@ enum class Pins{
 //% color=50 weight=80
 //% icon="\uf1eb"
 namespace ultrasonic { 
-	
-	HCSR04 *hcsr04;
 	
   /**
    * initialises local variable
