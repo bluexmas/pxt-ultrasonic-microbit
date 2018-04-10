@@ -54,7 +54,7 @@ namespace Ultrasonic {
   */
   //% blockId=ultrasonic_get_dist_cm
   //% block="Return the distance from obstacle in cm"
-  unsigned int get_dist_cm(void) {
+  int get_dist_cm(void) {
     return hcsr04->get_dist_cm();
   }
 }
