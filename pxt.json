@@ -4,7 +4,8 @@
     "description": "ultrasonic",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "radio": "*"
     },
     "files": [
         "shims.d.ts",
