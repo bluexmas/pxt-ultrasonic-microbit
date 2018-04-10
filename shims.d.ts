@@ -7,7 +7,7 @@ declare namespace Ultrasonic {
      */
     //% blockId=ir_init
     //% block="connect ir receiver to %pin" shim=IR::init
-    function init(pin: Pins): void;
+    function init(trigPin: Pins, pin: echoPin): void;
     
 		/**
 	  * Generates the trigger pulse of 10us on the trigger PIN.
