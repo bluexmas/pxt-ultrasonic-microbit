@@ -6,8 +6,8 @@ declare namespace Ultrasonic {
      * initialises local variablesssss
      */
     //% blockId=ir_init
-    //% block="connect ir receiver to %pin" shim=IR::init
-    function init(trigPin: Pins, pin: echoPin): void;
+    //% blockId=radio_datagram_send_value block="radio send|value %trigPin|= %echoPin" blockGap=8 shim=radio::sendValue
+    function init(trigPin: Pins, echoPin: Pins): void;
     
 		/**
 	  * Generates the trigger pulse of 10us on the trigger PIN.
