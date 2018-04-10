@@ -1,7 +1,7 @@
 {
-    "name": "sdcard",
+    "name": "ultrasonic",
     "version": "0.0.1",
-    "description": "Tinkercademy package for SD card support",
+    "description": "ultrasonic",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -9,22 +9,9 @@
     "files": [
         "shims.d.ts",
         "enums.d.ts",
-        "FATDirHandle.cpp",
-        "FATDirHandle.h",
-        "FATFileHandle.cpp",
-        "FATFileHandle.h",
-        "FATFileSystem.cpp",
-        "FATFileSystem.h",
-        "SDFileSystem.cpp",
-        "SDFileSystem.h",
-        "ccsbcs.cpp",
-        "diskio.cpp",
-        "diskio.h",
-        "ff.h",
-        "ffconf.h",
-        "ff.cpp",
-        "integer.h",
-        "sdcard.cpp"
+        "hcsr04.cpp",
+        "hcsr04.h",
+        "ultrasonic.cpp"
     ],
     "testFiles": [
         "tests.ts"
