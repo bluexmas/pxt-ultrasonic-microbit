@@ -6,7 +6,7 @@ declare namespace Ultrasonic {
      * initialises local variablesssss
      */
     //% blockId=ir_init
-    //% blockId=radio_datagram_send_value block="radio send|value %trigPin|= %echoPin" blockGap=8 shim=radio::sendValue
+    //% block="radio send|value %trigPin|= %echoPin"
     function init(trigPin: Pins, echoPin: Pins): void;
     
 		/**
