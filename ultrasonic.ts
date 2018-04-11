@@ -6,7 +6,7 @@ namespace ultrasonic {
 	   * initialises the ultrasonic
 	   */
 	  //% blockId=ultrasonic_init
-	  //% block="Ultrasonic TrigPin = %trigPin| EchoPin = % EchoPin =|" 
+	  //% block="ultrasonic TrigPin = %trigPin|th item in %echoPin|" 
     //% shim=ultrasonic::init
     export function init(trigPin: Pins, echoPin: Pins): void{
         return;
@@ -18,7 +18,7 @@ namespace ultrasonic {
 	  //% blockId=ultrasonic_start
 	  //% block="Ultrasonic Start" 
 	  //% shim=ultrasonic::start
-    export function start(): void {
+    export function start(): void{
         return;
     }
 
@@ -29,7 +29,7 @@ namespace ultrasonic {
 	  //% async
 	  //% block="Return the distance from obstacle in cm" 
 	  //% shim=ultrasonic::get_dist_cm
-    export function get_dist_cm(): number {
+    export function get_dist_cm(): number{
         return;
     }
 }
