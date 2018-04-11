@@ -6,7 +6,7 @@ namespace ultrasonic {
 	   * initialises the ultrasonic
 	   */
 	  //% blockId=ultrasonic_init
-	  //% block="ultrasonic TrigPin = %trigPin|th item in %echoPin|" 
+	  //% block="Ultrasonic TrigPin = %trigPin|, EchoPin = %echoPin|" 
     //% shim=ultrasonic::init
     export function init(trigPin: Pins, echoPin: Pins): void{
         return;
