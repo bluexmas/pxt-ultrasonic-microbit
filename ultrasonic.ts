@@ -18,7 +18,7 @@ namespace ultrasonic {
 	  //% blockId=ultrasonic_start
 	  //% block="Ultrasonic Start" 
 	  //% shim=ultrasonic::start
-    export function start(): void{
+    export function start(): void {
         return;
     }
 
@@ -26,9 +26,10 @@ namespace ultrasonic {
 	  * Return the distance from obstacle in cm
 	  */
 	  //% blockId=ultrasonic_get_dist_cm
+	  //% async
 	  //% block="Return the distance from obstacle in cm" 
 	  //% shim=ultrasonic::get_dist_cm
-    export function get_dist_cm(): number{
+    export function get_dist_cm(): number {
         return;
     }
 }
