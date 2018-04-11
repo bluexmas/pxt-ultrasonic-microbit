@@ -6,7 +6,7 @@ declare namespace ultrasonic {
 	   * initialises the ultrasonic
 	   */
 	  //% blockId=ultrasonic_init
-	  //% block="Ultrasonic.init TrigPin = %trigPin|, EchoPin = %echoPin|" 
+	  //% block="Ultrasonic.init(TrigPin = %trigPin|, EchoPin = %echoPin|" 
     //% shim=ultrasonic::init
     function init(trigPin: Pins, echoPin: Pins): void;
     
