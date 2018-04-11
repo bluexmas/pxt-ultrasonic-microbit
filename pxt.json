@@ -10,9 +10,9 @@
     		"README.md",
         "ultrasonic.ts",
         "ultrasonic.cpp",
-        "enums.d.ts",
         "hcsr04.cpp",
-        "hcsr04.h"        
+        "hcsr04.h",
+        "enums.d.ts"
     ],
     "testFiles": [
         "tests.ts"
