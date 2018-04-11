@@ -1,6 +1,6 @@
 {
     "name": "ultrasonic",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "ultrasonic",
     "license": "MIT",
     "dependencies": {
