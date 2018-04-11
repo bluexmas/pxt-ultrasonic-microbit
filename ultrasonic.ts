@@ -13,12 +13,12 @@ namespace ultrasonic {
     }
     
 		/**
-	  * Generates the trigger pulse of 10us on the trigger PIN.
-	  */
+	   * Generates the trigger pulse of 10us on the trigger PIN.
+	   */
 	  //% blockId=ultrasonic_start
 	  //% block="Ultrasonic Start" 
 	  //% shim=ultrasonic::start
-    function start(): void{
+    export function start(): void{
         return;
     }
 
@@ -28,7 +28,7 @@ namespace ultrasonic {
 	  //% blockId=ultrasonic_get_dist_cm
 	  //% block="Return the distance from obstacle in cm" 
 	  //% shim=ultrasonic::get_dist_cm
-    function get_dist_cm(): number{
+    export function get_dist_cm(): number{
         return;
     }
 }
