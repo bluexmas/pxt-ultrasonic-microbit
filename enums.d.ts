@@ -22,7 +22,7 @@ declare enum Pins {
     P20 = 30,
 }
 
-declare namespace Ultrasonic {
+declare namespace ultrasonic {
 }
 
 // Auto-generated. Do not edit. Really.

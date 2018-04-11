@@ -3,9 +3,7 @@
 
 using namespace pxt;
 
-HCSR04 *hcsr04;
-
-enum class Pins{
+enum class Pins { 
   P0=  3,
   P1=  2,
   P2=  1,
@@ -27,33 +25,21 @@ enum class Pins{
   P20= 30
 };
 
-//% color=50 weight=80
-//% icon="\uf1eb"
-namespace ultrasonic { 
+namespace ultrasonic {
 	
-  /**
-   * initialises local variable
-   */
-  //% blockId=ultrasonic_init
-  //% block="TrigPin = %trigPin|th item in %echoPin|" 
+	HCSR04 *hcsr04;
+	
+  //%
   void init(Pins trigPin, Pins echoPin) {
     hcsr04 = new HCSR04((PinName)trigPin, (PinName)echoPin);
   }
   
-	/**
-  * Generates the trigger pulse of 10us on the trigger PIN.
-  */
-  //% blockId=ultrasonic_start
-  //% block="Ultrasonic Start"
+	//%
   void start(void) {
     hcsr04->start();
   }
 	
-  /**
-  * Return the distance from obstacle in cm
-  */
-  //% blockId=ultrasonic_get_dist_cm
-  //% block="Return the distance from obstacle in cm"
+  //%
   int get_dist_cm(void) {
     return hcsr04->get_dist_cm();
   }

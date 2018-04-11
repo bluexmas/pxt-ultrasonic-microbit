@@ -4,11 +4,10 @@
     "description": "ultrasonic",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
-        "radio": "*"
+        "core": "*"
     },
     "files": [
-        "shims.d.ts",
+        "ultrasonic.d.ts",
         "enums.d.ts",
         "hcsr04.cpp",
         "hcsr04.h",
