@@ -3,7 +3,7 @@
 
 using namespace pxt;
 
-enum class Pins { 
+enum class Pins{
   P0=  3,
   P1=  2,
   P2=  1,
@@ -25,22 +25,27 @@ enum class Pins {
   P20= 30
 };
 
-namespace ultrasonic {
-	
+namespace Ultrasonic {
+
 	HCSR04 *hcsr04;
-	
-  //%
-  void init(Pins trigPin, Pins echoPin) {
-    hcsr04 = new HCSR04((PinName)trigPin, (PinName)echoPin);
-  }
-  
+
 	//%
-  void start(void) {
-    hcsr04->start();
-  }
-	
-  //%
-  int get_dist_cm(void) {
-    return hcsr04->get_dist_cm();
-  }
+	void init(Pins trigPin, Pins echoPin) {
+		hcsr04 = new HCSR04((PinName)trigPin, (PinName)echoPin);
+	}
+
+	//%
+	void start(void) {
+		hcsr04->start();
+	}
+
+	//%
+	int get_dist_cm(void) {
+		return hcsr04->get_dist_cm();
+	}
+
+	//%
+	int sum(int value1, int value2){
+		return value1 + value2;
+	}
 }

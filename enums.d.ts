@@ -1,6 +1,7 @@
 // Auto-generated. Do not edit.
 
-declare enum Pins {
+
+    declare const enum Pins {
     P0 = 3,
     P1 = 2,
     P2 = 1,
@@ -20,9 +21,6 @@ declare enum Pins {
     P16 = 16,
     P19 = 0,
     P20 = 30,
-}
-
-declare namespace ultrasonic {
-}
+    }
 
 // Auto-generated. Do not edit. Really.
