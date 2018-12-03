@@ -1,5 +1,5 @@
 //% color=50 weight=80
-//% icon="\uf1eb"
+//% icon="\uf3b2"
 namespace Ultrasonic {
 
     /**
