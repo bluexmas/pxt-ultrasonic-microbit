@@ -31,12 +31,4 @@ namespace Ultrasonic {
 		//shim
 		return 0;
 	}
-
-	//% block="sum (%value1, %value2)"
-	//% blockId=ultrasonic_sum shim=Ultrasonic::sum
-	export function sum(value1 : number, value2 : number) : number {
-		//shim
-		return 0;
-	}
-
 }

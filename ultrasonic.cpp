@@ -43,9 +43,4 @@ namespace Ultrasonic {
 	int get_dist_cm(void) {
 		return hcsr04->get_dist_cm();
 	}
-
-	//%
-	int sum(int value1, int value2){
-		return value1 + value2;
-	}
 }
