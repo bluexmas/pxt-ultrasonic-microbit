@@ -7,7 +7,7 @@ namespace Ultrasonic {
      * @param trigPin trigPin (in pixels), eg: 64
      * @param echoPin echoPin (in pixels), eg: 128
      */
-	//% block="initialise"
+	//% block="initialise(%trigPin, %echoPin)"
 	//% blockId=ultrasonic_init shim=Ultrasonic::initialise
     export function init(trigPin: Pins, echoPin: Pins) : void {
 		//shim
