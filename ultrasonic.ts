@@ -2,7 +2,7 @@
 //% icon="\uf3b2"
 namespace Ultrasonic {
 
-	//% block="initialise3(%trigPin, %echoPin)"
+	//% block="initialise4(%trigPin, %echoPin)"
 	//% blockId=ultrasonic_init shim=Ultrasonic::init
     export function init(trigPin: Pins, echoPin: Pins) : void {
 		//shim
