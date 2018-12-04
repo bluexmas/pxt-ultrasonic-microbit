@@ -28,22 +28,25 @@ enum class Pins{
 namespace Ultrasonic {
 
 	HCSR04 *hcsr04;
+	HCSR04 usensor(P0_3, P0_2); // P0_0 TRIGGER P0_30 ECHO
 
 	//%
 	void init(Pins trigPin, Pins echoPin) {
 		//hcsr04 = new HCSR04(*pxt::getPin(trigPin), *pxt::getPin(echoPin);
-		if (hcsr04 != NULL) delete hcsr04;
-		hcsr04 = new HCSR04((PinName)trigPin, (PinName)echoPin);
+		//if (hcsr04 != NULL) delete hcsr04;
+		//hcsr04 = new HCSR04((PinName)trigPin, (PinName)echoPin);
 	}
 
 	//%
 	void start(void) {
-		hcsr04->start();
+		//hcsr04->start();
+		usensor.start();
 	}
 
 	//%
 	int get_dist_cm(void) {
-		return hcsr04->get_dist_cm();
+		//return hcsr04->get_dist_cm();
+		return usensor.get_dist_cm();
 	}
 
 	//%
