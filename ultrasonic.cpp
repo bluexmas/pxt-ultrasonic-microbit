@@ -30,7 +30,7 @@ namespace Ultrasonic {
 	HCSR04 *hcsr04;
 
 	//%
-	void init(Pins value1, Pins value2) {
+	void init(Pins trigPin, Pins echoPin) {
 		//hcsr04 = new HCSR04(*pxt::getPin(trigPin), *pxt::getPin(echoPin);
 		hcsr04 = new HCSR04((PinName)trigPin, (PinName)echoPin);
 	}
