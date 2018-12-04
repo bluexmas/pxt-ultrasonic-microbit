@@ -10,7 +10,7 @@ namespace Ultrasonic {
 	
 	//% block="start"
 	//% blockId=ultrasonic_start shim=Ultrasonic::start
-    export function start(): void {
+	export function start(): void {
 		//shim
 	}
 
