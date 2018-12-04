@@ -2,9 +2,9 @@
 //% icon="\uf3b2"
 namespace Ultrasonic {
 
-	//% block="initialise5(%trigPin, %echoPin)"
+	//% block="init (%value1, %value2)"
 	//% blockId=ultrasonic_init shim=Ultrasonic::init
-    export function init(trigPin: number, echoPin: number) : void {
+	export function init(value1 : number, value2 : number) : void {
 		//shim
 	}
 	

@@ -30,7 +30,7 @@ namespace Ultrasonic {
 	HCSR04 *hcsr04;
 
 	//%
-	void init(int trigPin, int echoPin) {
+	void init(int value1, int value2) {
 		//hcsr04 = new HCSR04(*pxt::getPin(trigPin), *pxt::getPin(echoPin);
 		//hcsr04 = new HCSR04((PinName)trigPin, (PinName)echoPin);
 	}
@@ -46,7 +46,7 @@ namespace Ultrasonic {
 	}
 
 	//%
-	int sum(int value1, int value2){
+	int sum(int value1, int value2) {
 		return value1 + value2;
 	}
 }
