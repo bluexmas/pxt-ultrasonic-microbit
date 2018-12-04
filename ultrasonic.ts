@@ -9,7 +9,7 @@ namespace Ultrasonic {
      */
 	//% block="initialise(%trigPin, %echoPin)"
 	//% blockId=ultrasonic_init shim=Ultrasonic::init
-    export function init(trigPin: DigitalPin, echoPin: DigitalPin) : void {
+    export function init(trigPin: Pins, echoPin: Pins) : void {
 		//shim
 	}
 	
@@ -31,4 +31,5 @@ namespace Ultrasonic {
 		//shim
 		return 0;
 	}
+
 }
