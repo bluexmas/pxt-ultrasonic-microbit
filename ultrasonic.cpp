@@ -31,7 +31,8 @@ namespace Ultrasonic {
 
 	//%
 	void init(Pins trigPin, Pins echoPin) {
-		//hcsr04 = new HCSR04((PinName)trigPin, (PinName)echoPin);
+		//hcsr04 = new HCSR04(*pxt::getPin(trigPin), *pxt::getPin(echoPin);
+		hcsr04 = new HCSR04((PinName)trigPin, (PinName)echoPin);
 	}
 
 	//%
@@ -42,5 +43,10 @@ namespace Ultrasonic {
 	//%
 	int get_dist_cm(void) {
 		return hcsr04->get_dist_cm();
+	}
+
+	//%
+	int sum(int value1, int value2){
+		return value1 + value2;
 	}
 }
