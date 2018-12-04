@@ -1,10 +1,10 @@
 //% color=50 weight=80
-//% icon="\uf5d2"
+//% icon="\uf1e9"
 namespace Ultrasonic {
 
-	//% block="initialization  (%value1, %value2)"
+	//% block="initialization2 (%trigPin, %echoPin)"
 	//% blockId=ultrasonic_init shim=Ultrasonic::init
-	export function init(value1 : Pins, value2 : Pins) : void {
+	export function init(trigPin : Pins, echoPin : Pins) : void {
 		//shim
 		return;
 	}
