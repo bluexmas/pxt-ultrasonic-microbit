@@ -2,16 +2,18 @@
 //% icon="\uf3b2"
 namespace Ultrasonic {
 
-	//% block="init (%value1, %value2)"
+	//% block="init2 (%value1, %value2)"
 	//% blockId=ultrasonic_init shim=Ultrasonic::init
 	export function init(value1 : number, value2 : number) : void {
 		//shim
+		return;
 	}
 	
 	//% block="start"
 	//% blockId=ultrasonic_start shim=Ultrasonic::start
 	export function start(): void {
 		//shim
+		return;
 	}
 
 	//% block="get_dist_cm (in cm)"
