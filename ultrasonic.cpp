@@ -38,7 +38,7 @@ namespace Ultrasonic {
 
 	//%
 	void start(void) {
-		//hcsr04->start();
+		hcsr04->start();
 	}
 
 	//%
