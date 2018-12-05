@@ -4,49 +4,46 @@
 using namespace pxt;
 
 enum class Pins{
-  P0=  3,
-  P1=  2,
-  P2=  1,
-  P3=  4,
-  P4=  5,
-  P5=  17,
-  P6=  12,
-  P7=  11,
-  P8=  18,
-  P9=  10,
-  P10= 6,
-  P11= 26,
-  P12= 20,
-  P13= 23,
-  P14= 22,
-  P15= 21,
+  P0=  0,
+  P1=  1,
+  P2=  2,
+  P3=  3,
+  P4=  4,
+  P5=  5,
+  P6=  6,
+  P7=  7,
+  P8=  8,
+  P9=  9,
+  P10= 10,
+  P11= 11,
+  P12= 12,
+  P13= 13,
+  P14= 14,
+  P15= 15,
   P16= 16,
-  P19= 0,
-  P20= 30
+  P19= 19,
+  P20= 20
 };
 
 namespace Ultrasonic {
 
 	HCSR04 *hcsr04;
-	HCSR04 usensor(P0_3, P0_2); // P0_0 TRIGGER P0_30 ECHO
 
 	//%
 	void init(Pins trigPin, Pins echoPin) {
 		//hcsr04 = new HCSR04(*pxt::getPin(trigPin), *pxt::getPin(echoPin);
-		//if (hcsr04 != NULL) delete hcsr04;
-		//hcsr04 = new HCSR04((PinName)trigPin, (PinName)echoPin);
+		if (hcsr04 != NULL) delete hcsr04;
+		hcsr04 = new HCSR04((PinName)trigPin, (PinName)echoPin);
 	}
 
 	//%
 	void start(void) {
-		//hcsr04->start();
-		usensor.start();
+		hcsr04->start();
 	}
 
 	//%
 	int get_dist_cm(void) {
-		//return hcsr04->get_dist_cm();
-		return usensor.get_dist_cm();
+		return hcsr04->get_dist_cm();
 	}
 
 	//%
