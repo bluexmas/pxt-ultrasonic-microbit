@@ -17,9 +17,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-
+#include "pxt.h"
 #include "hcsr04.h"
-
 
 HCSR04::HCSR04(PinName TrigPin,PinName EchoPin):
     trigger(TrigPin), echo(EchoPin)
@@ -42,8 +41,7 @@ void HCSR04::isr_rise(void)
 void HCSR04::start(void)
 {
     trigger=1;
-    //wait_us(10);
-    wait(0.1);
+    wait_us(10);
     trigger=0;
 }
 

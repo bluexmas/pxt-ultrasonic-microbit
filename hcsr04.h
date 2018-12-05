@@ -25,7 +25,7 @@
 #define MBED_HCSR04_H
 
 #include "mbed.h"
-#include "MicroBit.h"
+#include "pxt.h"
 
 /** HCSR04 Class(es)
  */
