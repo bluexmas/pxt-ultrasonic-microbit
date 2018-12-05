@@ -24,7 +24,8 @@
 #ifndef MBED_HCSR04_H
 #define MBED_HCSR04_H
 
-#include "mbed.h"
+//#include "mbed.h"
+#include "pxt.h"
 
 /** HCSR04 Class(es)
  */
@@ -48,11 +49,13 @@ public:
     unsigned int get_pulse_us(void);
     /** Generates the trigger pulse of 10us on the trigger PIN.
     */
-    void start(void);
+    void start(void );
     void isr_rise(void);
     void isr_fall(void);
     void fall (void (*fptr)(void));
     void rise (void (*fptr)(void));
+
+
 
 private:
 
