@@ -41,7 +41,7 @@ void HCSR04::isr_rise(void)
 void HCSR04::start(void)
 {
     trigger=1;
-    //wait_us(10);
+    wait_us(10);
     trigger=0;
 }
 
