@@ -37,12 +37,12 @@ namespace Ultrasonic {
 	}
 
 	//%
-	void start(void) {
-		//hcsr04->start();
+	void start() {
+		hcsr04->start();
 	}
 
 	//%
-	int get_dist_cm(void) {
+	int get_dist_cm() {
 		return hcsr04->get_dist_cm();
 	}
 
