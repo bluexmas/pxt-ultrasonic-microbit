@@ -1,6 +1,6 @@
 {
     "name": "Ultrasonic",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Ultrasonic function",
     "license": "MIT",
     "dependencies": {
@@ -12,6 +12,9 @@
         "ultrasonic.cpp",
         "ultrasonic.ts",
         "enums.d.ts"
+    ],
+    "testFiles": [
+        "tests.ts"
     ],
     "public": true
 }
